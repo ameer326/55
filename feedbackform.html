@@ -25,39 +25,123 @@
         </nav>
             <h1>Frequently Asked Questions</h1>
     </section>
-    <p><b>How do I use ExcelVizPro?</b><br>
+    <div class="faq">
+        <button class="accordion">
+            How do I use ExcelVizPro?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Simply select "Upload a file" and our application will begin the visualization process.
+          </p>
+        </div>
+      </div>
 
-        Simply select "Upload a file" and our application will begin the visualization process.<br>
-        
-        <b> How does ExcelVizPro work?</b><br>
-        
-        ExcelVizPro takes information obtained from spreadsheet files and automatically transforms the data into visual graphs.<br>
-        
-        <b> How much does ExcelVizPro cost?</b><br>
-        
-        Monthly subscriptions start at $19.99<br>
-        Yearly subscriptions discounted at $199.99<br>
-        
-        <b> When is the billing cycle?</b><br>
-        
-        Your credit card/bank account will be billed on the 16th of each month.<br>
-        
-        <b> What is your refund policy</b>?<br>
-        
-        Refunds for subscriptions can only be issued within 7 days after billing payment.<br>
-        
-        <b> What kind of graphs can I visualize?</b><br>
-        
-        Our application offers bar graphs, line graphs, pie charts, and we are always adding more.<br>
-        
-        <b> How do I contact customer support?</b><br>
-        
-        Please email our team about any inquiries you have.<br>
-        Our details are located on the "Contact Us" page.<br>
-        
-        
-        <b> Is my uploaded information private? </b><br>
-        Our application does not share your data with any third-party organizations.<br></p>
+      <div class="faq">
+        <button class="accordion">
+            How does ExcelVizPro work?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            ExcelVizPro takes information obtained from spreadsheet files and automatically transforms the data into visual graphs.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            How much does ExcelVizPro cost?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Monthly subscriptions start at $19.99
+            Yearly subscriptions discounted at $199.99
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            When is the billing cycle?
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Your credit card/bank account will be billed on the 16th of each month.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            What is your refund policy?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Refunds for subscriptions can only be issued within 7 days after billing payment.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="accordion">
+            How do I contact customer support?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Please email our team about any inquiries you have.
+            Our details are located on the "Contact Us" page.
+          </p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="accordion">
+            Is my uploaded information private?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Our application does not share your data with any third-party organizations.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            What kind of graphs can I visualize?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Our application offers bar graphs, line graphs, pie charts, and we are always adding more.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
         
         <div class="comment-box">
             <h3>Your Opinion Matters!</h3>
